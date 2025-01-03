@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>ScreenShotter</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>ScreenShotter</h1>
+
+    <div style="display: flex; justify-content: center;">
+        <button id="captureButton">
+            Start
+        </button>
+     
+        <button id="stopButton">
+            Stop
+        </button>
+    </div>
+    <p id="status2"></p>
+    <p id="status"></p>
+   
+    <img id="screenshot" src="" alt="Screenshot"/>
+    <div id="uploadList"></div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
