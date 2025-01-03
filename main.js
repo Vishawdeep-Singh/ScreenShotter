@@ -53,7 +53,7 @@ const createWindow = () => {
     // Upload buffer directly to Vercel Blob
     const blob = await put(filename, imageBuffer, {
       access: 'public',
-      token: process.env.BLOB_READ_WRITE_TOKEN,
+      token: "vercel_blob_rw_KmTJ6yQwerQA6hAo_gZAbraSTVaGkdTXVNDPNTEvSJtinRo",
       addRandomSuffix: true
     });
 
